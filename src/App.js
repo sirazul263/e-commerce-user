@@ -1,9 +1,18 @@
 import "./styles/styles.scss";
-import { Button } from "react-bootstrap";
+import HomePage from "./pages/HomePage";
+import { Switch, Route } from "react-router-dom";
+import ProductList from "./pages/ProductList";
 function App() {
   return (
     <div className="App">
-      <h1>Admin</h1>
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route exact path="/:slug">
+          <ProductList />
+        </Route>
+      </Switch>
     </div>
   );
 }

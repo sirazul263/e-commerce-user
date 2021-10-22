@@ -1,0 +1,128 @@
+.header {
+  width: 100%;
+  height: 56px;
+  background-color: #2874f0;
+}
+// .menuHeader {
+//   width: 100%;
+//   height: 40px;
+//   background: #fff;
+//   border-bottom: 1px solid #cecece;
+//   box-shadow: 0 2px 2px -2px #333;
+//   ul {
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//     li > ul {
+//       font-size: 14px;
+//       position: absolute;
+//       background: #fff;
+//       left: 0;
+//       right: 0;
+//       display: none;
+//       a {
+//         text-decoration: none !important;
+//         font-weight: 700;
+//         font-size: 12px;
+//       }
+//     }
+//   }
+//   & > ul {
+//     display: flex;
+//     margin: 0 50px;
+//     position: relative;
+
+//     & > li {
+//       &:hover ul {
+//         display: block;
+//       }
+//       & > ul > li {
+//         margin: 0 20px;
+//         & > a {
+//           font-weight: 700;
+//         }
+//         a {
+//           display: block;
+//           padding: 3px 0;
+//           color: #707070;
+//         }
+//       }
+//       & > ul li {
+//         margin: 0 20px;
+//       }
+//     }
+
+//     li > span {
+//       display: block;
+//       line-height: 40px;
+//       cursor: pointer;
+//       padding: 0 20px;
+//       font-size: 14px;
+//       &:hover {
+//         color: #2874f0;
+//       }
+//     }
+//   }
+// }
+.menuHeader {
+  height: 40px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 2px 2px -2px #333;
+}
+.menuHeader ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menuHeader > ul {
+  margin: 0 50px;
+  display: flex;
+  position: relative;
+}
+.menuHeader > ul > li > span {
+  line-height: 40px;
+  display: block;
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #333;
+}
+.menuHeader > ul > li > span:hover {
+  color: #2874f0;
+}
+.menuHeader > ul > li > ul {
+  position: absolute;
+  left: 0;
+  padding: 0 20px;
+  background: #fff;
+  right: 0;
+  display: none;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px -2px #333;
+  z-index: 5000;
+}
+.menuHeader > ul > li:hover ul {
+  display: block;
+}
+.menuHeader > ul > li > ul > li {
+  float: left;
+  min-width: 200px;
+}
+.menuHeader > ul > li > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+  display: block;
+}
+.menuHeader > ul > li > ul > li a {
+  text-decoration: none;
+  color: #707070;
+  display: block;
+  margin: 5px 0;
+  font-size: 12px;
+}
